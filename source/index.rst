@@ -10,7 +10,6 @@ Welcome to spfluo-app's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    usage/installation.rst
    usage/tutorial.rst
