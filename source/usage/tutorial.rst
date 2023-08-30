@@ -10,6 +10,7 @@ What's covered here:
     - Importing fluorescence images
     - Visualising data with Napari
     - Picking particles manually
+    - Extracting particles
     - Importing a PSF
     - Running reconstruction algorithms like ab initio and refinement
 
@@ -92,4 +93,11 @@ Picking particles manually
 To pick particles manually, you will need the ```manual picking`` protocol.
 
 This protocol takes as an input a ``SetOfFluoImages``. Choose the images we imported.
+Extracting particles
+--------------------
+
+Now we will extract the particles from the images. For this, we have the ``extract particles`` protocol.
+This one is fairly simple: select the coordinates you just generated with the ``manual picking`` protocol and hit *Execute*!
+
+You can visualise the extracted particles the same way you visualised your images at the end of the `Importing images`_ section.
 
