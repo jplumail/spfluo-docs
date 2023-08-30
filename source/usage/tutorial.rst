@@ -71,7 +71,7 @@ After some time, the import should be done and the protocol box should turn gree
 
 .. note::
     
-    Almost all the protocols you will output objects in the *Output* section. You can visualise them with any of the available viewers.
+    Almost all the protocols you will use output objects in the *Output* section. You can visualise them with any of the available viewers.
 
 Visualise the data you imported with napari.
 
