@@ -80,13 +80,6 @@ Visualise data with Napari
 --------------------------
 
 
-Importing a PSF
----------------
-
-To import a PSF, double-click on the protocol ``import psf``. Here, choose the path to the ``psf.tiff`` file`in the examples folder. Fill in the acquisition parameter the same way you did with the images and execute the protocol.
-
-You should be able to visualise the PSF the same way you did previously.
-
 Picking particles manually
 --------------------------
 
@@ -185,4 +178,14 @@ Now we will extract the particles from the images. For this, we have the ``extra
 This one is fairly simple: select the coordinates you just generated with the ``manual picking`` protocol and hit *Execute*!
 
 You can visualise the extracted particles the same way you visualised your images at the end of the `Importing images`_ section.
+
+Importing a PSF
+---------------
+
+To import a PSF, double-click on the protocol ``import psf``. Here, choose the path to the ``psf.tiff`` file`in the examples folder. Fill in the acquisition parameter the same way you did with the images and execute the protocol.
+
+You should be able to visualise the PSF the same way you did previously.
+
+Running ab initio reconstruction
+--------------------------------
 
