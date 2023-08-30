@@ -19,24 +19,24 @@ Creating a project
 
 Launching the app is covered in the :doc:`Installation <installation>` section. Once the app is launched, the Scipion launcher should appear. The **spfluo-app** uses the `Scipion software` as an interface:
 
-.. image:: ../_assets/scipion-launcher-empty.png
+.. image:: ../_static/scipion-launcher-empty.png
 
 Click on create a project.
 
-.. image:: ../_assets/create-a-project-page.png 
+.. image:: ../_static/create-a-project-page.png 
 
 By default, all your projects will be stored inside the ScipionFluoUserData folder located in your user folder. For example on Windows, it looks like this: ``C:\Users\Pierre\ScipionFluoUserData``.
 
 All the files of the project will be stored inside a folder.
 
-.. image:: ../_assets/project-folder.png
+.. image:: ../_static/project-folder.png
 
 Importing images
 ----------------
 
 On the left panel click on ``View > All``.
 
-.. image:: ../_assets/empty-project.png
+.. image:: ../_static/empty-project.png
 
 What you see on the left is all the protocols that will populate our workflow. We have:
 
@@ -45,7 +45,7 @@ What you see on the left is all the protocols that will populate our workflow. W
 
 Double-click on the protocol ``import fluoimages``.
 
-.. image:: ../_assets/import-files.png
+.. image:: ../_static/import-files.png
 
 Select the ``examples`` folder that was given with **spfluo-app**. This folder contains the data you will be working with:
 
@@ -62,13 +62,13 @@ The images to import are named ``FOV_X_MMStack_Pos0.ome_c1.tiff``. To match them
 
 The images have a pixel of size 56nm x 56nm x 150nm. We fill the acquisition info in micrometers accordingly.
 
-.. image:: ../_assets/import-files-filled.png
+.. image:: ../_static/import-files-filled.png
 
 Then, click on *Execute*.
 
 After some time, the import should be done and the protocol box should turn green. On the bottom of the screen, a panel is summarizing the protocol. In the *Output* section, a ``SetOfFluoImages`` object is displayed. This object represents the images you imported. You can right-click on it to see the available viewers.
 
-.. image:: ../_assets/output-right-click-napariviewer.png
+.. image:: ../_static/output-right-click-napariviewer.png
 
 .. note::
     

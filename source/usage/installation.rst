@@ -90,7 +90,7 @@ The installation is now complete! You should now be able to run ``python3 spfluo
 
 .. _scipion-launcher:
 
-.. figure:: ../_assets/scipion-launcher-empty.png
+.. figure:: ../_static/scipion-launcher-empty.png
    :alt: scipion launcher empty
    :figwidth: 500px
    :figclass: align-center
