@@ -97,4 +97,4 @@ The installation is now complete! You should now be able to run ``python3 spfluo
 
    The Scipion launcher
 
-Go to :doc:`Tutorial <tutorial>` to get started with using **spfluo-app**.
+Go to :doc:`tutorial/index` to get started with using **spfluo-app**.

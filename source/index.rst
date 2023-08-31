@@ -12,7 +12,7 @@ Welcome to spfluo-app's documentation!
    :maxdepth: 2
 
    usage/installation.rst
-   usage/tutorial.rst
+   usage/tutorial/index.rst
 
 
 Indices and tables
