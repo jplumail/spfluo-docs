@@ -183,6 +183,69 @@ To import a PSF, double-click on the protocol ``import psf``. Here, choose the p
 
 You should be able to visualise the PSF the same way you did previously.
 
-Running ab initio reconstruction
---------------------------------
+Running the ab initio reconstruction
+------------------------------------
 
+Select the ``ab initio reconstruction``. This protocol is easy to use. Simply select the extracted particles and the PSF you just imported.
+
+.. |scipion-help| image:: ../_static/scipion-help.png
+    :height: 2.5ex
+    :class: no-scaled-link
+
+In this protocol you can change the *Expert Level* to *Advanced*. It allows you to modify more parameters, especially in the Reconstruction params tab.
+Click on |scipion-help| to get explanations.
+
+.. image:: ../_static/ab-initio-advanced.png
+
+This protocol will take some time to finish. To see if the run is doing well, go to the ``Output Log`` tab on the bottom panel.
+Here you have ``run.stdout`` which prints all the commands that were called during the run;
+and, more importantly, ``run.stderr`` which gives you the progression of the algorithm.
+
+.. image:: ../_static/ab-initio-outputlog.png
+
+On line 52 here, you can see:
+
+.. code-block:: text
+
+    00052:   energy : 24078884957.1:   5%|▌         | 1/20 [00:18<05:59, 18.92s/it]
+
+which reads: 1 epoch over 20 was done in 18s. The approximate ending of the algorithm is in 5m59s.
+
+When the protocol is finished, you will have 2 outputs:
+ - a reconstructed volume that you can visualise
+ - a set of particles with approximated rotations.
+   Here the visualisation is the same as the raw extracted particles, but internally each particle stores a rotation found during the ab initio reconstruction.
+   They will be used in the ``refinement`` protocol.
+
+Running the refinement
+----------------------
+
+The refinement will take as input the particles from the ab initio reconstruction output.
+
+As the ab initio protocol, it will give you a reconstructed volume that you can visualise.
+
+You're done! Here is how your workflow should look like.
+
+.. image:: ../_static/scipion-tree.png
+
+Conducting experiments
+----------------------
+
+When experimenting with the algorithms, you may want to change parameters or add particles to your picking.
+
+This is possible with Scipion! There are 2 ways :
+ - If you don't care about the previous results, you can restart a protocol with new parameters / inputs with the ``Run mode`` set to Restart.
+
+   .. image:: ../_static/scipion-runmode.png
+   
+   This will overwrite your previous run and the data will be lost.
+
+ - If you want to keep the previous results, create another protocol. You can have as many protocols as you want in your project.
+   
+   .. image:: ../_static/scipion-twoexp.png
+
+   Renaming your protocols depending on the experiment you're doing might be a good idea. In the protocol windows, simply change the ``Run name``.
+
+.. note::
+    The ``manual picking`` protocol is *interactive* which means you can add particles without going into the restart mode.
+    A new set of particles is saved each time you enter the manual picking.
