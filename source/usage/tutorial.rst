@@ -83,7 +83,7 @@ Visualise data with Napari
 Picking particles manually
 --------------------------
 
-To pick particles manually, you will need the ```manual picking`` protocol.
+To pick particles manually, you will need the ``manual picking`` protocol.
 
 This protocol takes as an input a ``SetOfFluoImages``. Choose the images we imported.
 
