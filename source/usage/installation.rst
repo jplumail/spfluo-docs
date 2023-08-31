@@ -38,7 +38,7 @@ On Windows
         - If you have a GPU::
 
             $ py -m pip install -r requirements-gpu.txt
-            $ py -m pip install -r requirements-gpu-windows.txt
+            $ py -m pip install --force-reinstall -r requirements-gpu-windows.txt
         - Otherwise::
 
             $ py -m pip install -r requirements-cpu.txt
