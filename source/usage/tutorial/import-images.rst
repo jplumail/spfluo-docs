@@ -28,6 +28,12 @@ In the *Files directory* field, select the ``examples`` folder that was given wi
 
 The images to import are named ``FOV_XX_MMStack_Pos0.ome.tiff``. To match them, we fill the *pattern* field with ``FOV_*.tiff``. This way, we avoid importing the ``psf.tiff`` file.
 
+Choose the ``OmeTiffReader`` for the reader, since our images are OME-TIFF files.
+
+.. note::
+
+    While OME-TIFF format is well supported by **spfluo-app**, other TIFF formats might not be well read: for instance, the Z dimension may miss.
+
 The images have a pixel of size 56nm x 56nm x 150nm. We fill the acquisition info in micrometers accordingly.
 
 .. image:: ../../_static/import-files-filled.png
