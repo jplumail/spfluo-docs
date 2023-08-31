@@ -30,3 +30,6 @@ html_theme = 'furo'
 html_static_path = ['_static']
 
 numfig = True
+
+# -- Options for PDF output --
+latex_engine = 'xelatex'
