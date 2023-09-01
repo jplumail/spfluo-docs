@@ -43,6 +43,11 @@ On Windows
 
             $ py -m pip install -r requirements-cpu.txt
 
+3. Enable the `developer mode <https://learn.microsoft.com/windows/apps/get-started/enable-your-device-for-development#activate-developer-mode>`_:
+    a. Press the ``Windows`` key and search for *developer*.
+       From the For developers settings dialog, choose the level of access that you need.
+    b. Read the disclaimer for the setting you choose. Click Yes to accept the change.
+
 The installation is now complete! You should now be able to double-click on the file ``spfluo-app.pyw``. It should open the Scipion launcher :numref:`[%s] <scipion-launcher>`.
 
 You can create a shortcut:
