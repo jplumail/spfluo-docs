@@ -28,6 +28,8 @@ exclude_patterns = []
 
 html_theme = 'furo'
 html_static_path = ['_static']
+html_css_files = ['css/custom.css']
+
 
 numfig = True
 
