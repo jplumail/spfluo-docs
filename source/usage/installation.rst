@@ -25,6 +25,10 @@ On Windows
         $ cd C:\path\to\spfluo-app\spfluo-app
     
     The :command:`cd` command will move you to the desired folder.
+
+    .. note::
+        Please note that the dollar sign $ is indicative of being within the interpreter,
+        and you should not include it when typing the command.
     
     d. Enter the :command:`dir` command. Make sure the following files are present:
         
@@ -43,9 +47,13 @@ On Windows
 
             $ py -m pip install -r requirements-cpu.txt
 
+.. 
+    TODO: find the level of access needed!
+
 3. Enable the `developer mode <https://learn.microsoft.com/windows/apps/get-started/enable-your-device-for-development#activate-developer-mode>`_:
     a. Press the ``Windows`` key and search for *developer*.
-       From the For developers settings dialog, choose the level of access that you need.
+       From the *For developers settings* dialog, choose the level of access that you need. 
+    
     b. Read the disclaimer for the setting you choose. Click Yes to accept the change.
 
 The installation is now complete! You should now be able to double-click on the file ``spfluo-app.pyw``. It should open the Scipion launcher :numref:`[%s] <scipion-launcher>`.
@@ -103,3 +111,10 @@ The installation is now complete! You should now be able to run ``python3 spfluo
    The Scipion launcher
 
 Go to :doc:`tutorial/index` to get started with using **spfluo-app**.
+
+
+Upgrade
+-------
+To upgrade your installation::
+
+    $ python3 -m pip install --upgrade --upgrade-strategy eager -r requirements.txt
