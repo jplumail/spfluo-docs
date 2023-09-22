@@ -14,17 +14,18 @@ Double-click on the protocol ``import fluoimages``. It should open a window.
 
 .. image:: ../../_static/import-files.png
 
-In the *Files directory* field, select the ``examples`` folder that was given with **spfluo-app**. This folder contains the data you will be working with:
+In the *Files directory* field, select the ``uEXM`` folder that was given with **spfluo-app**. This folder contains the data you will be working with:
 
 .. code-block:: text
 
     spfluo-app
     └── examples
-        ├── FOV_1_MMStack_Pos0.ome.tiff
-        ├── FOV_2_MMStack_Pos0.ome.tiff
-        ├── FOV_3_MMStack_Pos0.ome.tiff
-        ├── ...
-        └── psf.tiff
+        └── uEXM
+            ├── FOV_1_MMStack_Pos0.ome.tiff
+            ├── FOV_2_MMStack_Pos0.ome.tiff
+            ├── FOV_3_MMStack_Pos0.ome.tiff
+            ├── ...
+            └── psf.tiff
 
 The images to import are named ``FOV_XX_MMStack_Pos0.ome.tiff``. To match them, we fill the *pattern* field with ``FOV_*.tiff``. This way, we avoid importing the ``psf.tiff`` file.
 
