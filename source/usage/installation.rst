@@ -22,7 +22,7 @@ On Windows
         ii. Enter "cmd".
     c. Once the interpreter is opened, enter the following command::
 
-        $ cd C:\path\to\spfluo-app\spfluo-app
+        $ cd C:\path\to\spfluo-app\app
     
     The :command:`cd` command will move you to the desired folder.
 
@@ -34,8 +34,8 @@ On Windows
         
         .. code-block:: text
 
-            spfluo-app/
-            ├── requirements-cpu.txt
+            app/
+            ├── requirements.txt
             └── spfluo-app.pyw
     
     e. Run the installation with the following commands:
@@ -77,7 +77,7 @@ On Linux
     b. Open the terminal.
     c. Once the terminal is opened, enter the following command::
 
-        $ cd /path/to/spfluo-app
+        $ cd /path/to/spfluo-app/app
     
     The :command:`cd` command will move you to the desired folder.
     
@@ -85,8 +85,8 @@ On Linux
 
         .. code-block:: text
 
-            spfluo-app/
-            ├── requirements-cpu.txt
+            app/
+            ├── requirements.txt
             └── spfluo-app.py
 
 
@@ -99,7 +99,7 @@ On Linux
             $ python3 -m pip install -r requirements-cpu.txt
             $ python3 -m pip install -r requirements-cpu-linux.txt
 
-The installation is now complete! You should now be able to run ``python3 spfluo-app.py``. It should open the Scipion launcher :numref:`[%s] <scipion-launcher>`.
+The installation is now complete! You should now be able to run ``python3 spfluo-app.pyw``. It should open the Scipion launcher :numref:`[%s] <scipion-launcher>`.
 
 .. _scipion-launcher:
 
