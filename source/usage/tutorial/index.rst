@@ -16,5 +16,6 @@ What's covered here:
    extracting.rst
    import-psf.rst
    ab-initio.rst
+   alignment.rst
    refinement.rst
    experiments.rst

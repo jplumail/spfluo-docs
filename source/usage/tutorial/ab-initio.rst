@@ -31,3 +31,6 @@ When the protocol is finished, you will have 2 outputs:
  - a set of particles with approximated rotations.
    Here the visualisation is the same as the raw extracted particles, but internally each particle stores a rotation found during the ab initio reconstruction.
    They will be used in the ``refinement`` protocol.
+
+The reconstructed volume might not be aligned with the vertical axis.
+To impose a cylindrical symmetry constraint during the refinement, we first need to align the volume with the `align axis` protocol!
