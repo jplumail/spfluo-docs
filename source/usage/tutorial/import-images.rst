@@ -1,20 +1,20 @@
 Importing images
 ----------------
 
-On the left panel click on ``View > All``.
-
 .. image:: ../../_static/empty-project.png
 
 What you see on the left is all the protocols that will populate our workflow. We have:
 
  * imports protocols, used to imports stuff inside the software.
- * single particle protocols, to apply algorithms to the data.
+ * picking protocols, to detect particles in the images.
+ * reconstruciton protocols, to reconstruct a model.
+ * tools, a diverse set of algorithms.
 
 Double-click on the protocol ``import fluoimages``. It should open a window.
 
 .. image:: ../../_static/import-files.png
 
-In the *Files directory* field, select the ``uEXM`` folder that was given with **spfluo-app**. This folder contains the data you will be working with:
+In the *Files directory* field, select the ``isim`` folder that was given with **spfluo-app**. This folder contains the data you will be working with:
 
 .. code-block:: text
 
@@ -27,15 +27,18 @@ In the *Files directory* field, select the ``uEXM`` folder that was given with *
             ├── ...
             └── psf.tiff
 
-The images to import are named ``FOV_XX_MMStack_Pos0.ome.tiff``. To match them, we fill the *pattern* field with ``FOV_*.tiff``. This way, we avoid importing the ``psf.tiff`` file.
+The images to import are named ``FOV_XX_MMStack_Pos0.ome.tiff``. To match them, we fill in the *pattern* field with ``FOV_*.tiff``. This will match all the files that starts with ``FOV_`` and ends with ``.tiff``.
 
-Choose the ``OmeTiffReader`` for the reader, since our images are OME-TIFF files.
+Choose ``Automatic`` for the reader, this will work with our images.
+
+The images have a pixel of size 56nm x 56nm x 150nm. We fill in the acquisition infos in micrometers accordingly.
 
 .. note::
 
-    While OME-TIFF format is well supported by **spfluo-app**, other TIFF formats might not be well read: for instance, the Z dimension may miss.
+    The wizard button can be used to retrieve the infos from the metadata of the images. However, it will not always work! (it doesn't work for our images)
 
-The images have a pixel of size 56nm x 56nm x 150nm. We fill the acquisition info in micrometers accordingly.
+    While OME-TIFF format is well supported by **spfluo-app**, other TIFF formats might not be well read: for instance, the Z dimension may miss, or may be replaced by a temporal dimension.
+    The field ``transpose T<>Z axes when possible?`` enables autocorrect of the dimensions. 
 
 .. image:: ../../_static/import-files-filled.png
 
